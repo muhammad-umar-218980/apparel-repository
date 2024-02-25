@@ -10,6 +10,10 @@ main article:nth-child(3) section{
  text-align: center;
 }
 
+.art4 section img{
+ max-width: 250px;
+}
+
 @media (max-width:576px){
  header nav:nth-child(2) article:nth-child(2) ,header nav:nth-child(2) article:nth-child(3){
   display: none !important;
