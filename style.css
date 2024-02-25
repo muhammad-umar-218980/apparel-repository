@@ -1,0 +1,33 @@
+:root{
+ --main-blue: rgb(0, 106, 255);
+}
+.carousel-item img{
+ max-height: 700px;
+}
+
+main article:nth-child(3) section{
+ width: 300px !important;
+ text-align: center;
+}
+
+@media (max-width:576px){
+ header nav:nth-child(2) article:nth-child(2) ,header nav:nth-child(2) article:nth-child(3){
+  display: none !important;
+ }
+
+}
+
+@media (max-width:910px) {
+ main article:nth-child(3){
+  flex-wrap: wrap !important;
+  flex-direction: column;
+  align-items: center;
+  column-gap: 10px !important;
+  row-gap: 10px !important;
+ }
+
+ main article:nth-child(3) section{
+  width: 95% !important;
+ }
+ 
+}
