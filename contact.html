@@ -20,73 +20,79 @@
   integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   
   <!-- CUSTOM CSS -->
-  <link rel="stylesheet" href="style.css">
-
+  
   <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="style.css">
   
   
 </head>
 <body>
+  <!-- HEADER -->
   <header class="sticky-top">
     <!-- NAVBAR -->
-    <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex justify-content-lg-around justify-content-md-between flex-wrap bg-white px-4">
+    <nav class="navbar bg-body-tertiary fixed-top d-lg-none d-md-block d-sm-block">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="" alt="logo">
+          <img src="" alt="">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Men</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Women</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Kids</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Resources</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Quick Order</a>
-            </li>
-            <li class="nav-item">
-              <button>Login</button>
-            </li>
-            <li class="nav-item">
-              <button>Sign Up</button>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-            <i class=" fs-4 mx-2 fa-solid fa-magnifying-glass" data-bs-toggle="tooltip" title="Search"></i>
-            <i class=" fs-4 mx-2 fa-solid fa-cart-shopping" data-bs-toggle="tooltip" title="Shop"></i>
-            <i class=" fs-4 mx-2 fa-regular fa-heart" data-bs-toggle="tooltip" title="Favorites"></i>
-          </form>
+        <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title h5" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <form class="d-flex flex-column  mt-3 gap-4 align-items-center " role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn w-75 text-white" type="submit"
+                style="background-color: rgb(108, 117, 125);">Search</button>
+            </form>
+            <br>
+            <div class="list_div nav-item d-flex justify-content-center ">
+              <i class=" fs-4 mx-2 fa-solid fa-magnifying-glass" data-bs-toggle="tooltip" title="Search"></i>
+              <i class=" fs-4 mx-2 fa-solid fa-cart-shopping" data-bs-toggle="tooltip" title="Shop"></i>
+              <i class=" fs-4 mx-2 fa-regular fa-heart" data-bs-toggle="tooltip" title="Favorites"></i>
+            </div>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Men</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Women</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Kids</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Resources</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Quick Order</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Exclusive
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">20% off </a></li>
+                  <li><a class="dropdown-item" href="#">40% off</a></li>
+                  <li><a class="dropdown-item" href="#">50% off</a></li>
+                </ul>
+              </li>
+            </ul>
+  
+          </div>
         </div>
       </div>
-    </nav> -->
-    
-    
+    </nav>
+  
     <nav class="text-center bg-black text-white mx-0 mb-0">
       Welcome to <span><i>CALIFORNIA GLOBAL TS COMPANY !!</i></span>
       <style>
@@ -94,91 +100,86 @@
           color: var(--main-blue);
           cursor: pointer;
         }
-        </style>
-  </nav>
+      </style>
+    </nav>
   
-  <nav class="d-flex justify-content-lg-around justify-content-md-between flex-wrap bg-white px-4">
-    <article>
-      <img src="" alt="">
-    </article>
-    
-    <article class="nav_art2 d-lg-flex mt-3 justify-content-center align-items-center d-md-none d-sm-none">
-      <ul class="d-flex flex-wrap " style="list-style-type: none; cursor:pointer">
-        <li class="mx-3 mt-1">Men</li>
-        <li class="mx-3 mt-1">Women</li>
-        <li class="mx-3 mt-1">Kids</li>
-        <li class="mx-3 mt-1">Resources</li>
-        <li class="mx-3 mt-1">Quick Order</li>
-        <li>
-          <button>Login</button>
-        </li>
-        <li>
-          <button>Sign Up</button>
-        </li>
-      </ul>
-      <style>
-        nav :nth-child(2) li {
-          font-weight: bold;
-        }
-        
-        nav :nth-child(2) ul li:hover {
-          color: var(--main-blue);
-          text-decoration: underline;
-          text-decoration-thickness: 2px;
-        }
-
-        nav :nth-child(2) ul li:hover a {
-          color: var(--main-blue) !important;
-          text-decoration: underline;
-          text-decoration-thickness: 2px;
-        }
-        
-        nav :nth-child(2) ul li button {
-          border: none;
-          background-color: var(--main-blue);
-          border-radius: 6px;
-          color: rgb(255, 255, 255);
-          margin-right: 20px;
-          padding: 5px 10px;
-        }
-        
-        nav :nth-child(2) ul li button:hover {
-          background-color: rgb(0, 94, 255);
-        }
-      </style>
-    </article>
-    
-    <article class=" nav_art3 mt-4 d-lg-block d-md-none d-sm-none">
-      <section>
-        <i class=" fs-4 mx-2 fa-solid fa-magnifying-glass" data-bs-toggle="tooltip" title="Search"></i>
-        <i class=" fs-4 mx-2 fa-solid fa-cart-shopping" data-bs-toggle="tooltip" title="Shop"></i>
-        <i class=" fs-4 mx-2 fa-regular fa-heart" data-bs-toggle="tooltip" title="Favorites"></i>
-        
-      </section>
-      <style>
-        i:hover {
-          color: var(--main-blue);
-        }
-
-        .tooltip-inner {
-          background-color: var(--main-blue);
-        }
-      </style>
-    </article>
-
-    <article class="d-lg-none d-md-block">
-      <button class="btn">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-    </article>
-    
-  </nav>
-</header>
+    <nav class="d-flex justify-content-lg-around justify-content-md-between flex-wrap bg-white px-4 py-3">
+      <article>
+        <img src="" alt="">
+      </article>
+  
+      <article class="nav_art2 d-lg-flex mt-3 justify-content-center align-items-center d-md-none d-sm-none">
+        <ul class="d-flex flex-wrap " style="list-style-type: none; cursor:pointer">
+          <li class="mx-3 mt-1">Men</li>
+          <li class="mx-3 mt-1">Women</li>
+          <li class="mx-3 mt-1">Kids</li>
+          <li class="mx-3 mt-1">
+            <a href="contact.html" target="_blank" class="text-decoration-none" style="color:black">Contact Us</a>
+          </li>
+          <li class="mx-3 mt-1">Resources</li>
+          <li class="mx-3 mt-1">Quick Order</li>
+          <li>
+            <button>Login</button>
+          </li>
+          <li>
+            <button>Sign Up</button>
+          </li>
+        </ul>
+        <style>
+          nav :nth-child(2) li {
+            font-weight: bold;
+          }
+  
+          nav :nth-child(2) ul li:hover {
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+          }
+  
+          nav :nth-child(2) ul li:hover a {
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+          }
+  
+          nav :nth-child(2) ul li button {
+            border: none;
+            background-color: var(--main-blue);
+            border-radius: 6px;
+            color: rgb(255, 255, 255);
+            margin-right: 20px;
+            padding: 5px 10px;
+          }
+  
+          nav :nth-child(2) ul li button:hover {
+            background-color: rgb(70, 75, 80);
+          }
+        </style>
+      </article>
+  
+      <article class=" nav_art3 mt-4 d-lg-block d-md-none d-sm-none">
+        <section>
+          <i class=" fs-4 mx-2 fa-solid fa-magnifying-glass" data-bs-toggle="tooltip" title="Search"></i>
+          <i class=" fs-4 mx-2 fa-solid fa-cart-shopping" data-bs-toggle="tooltip" title="Shop"></i>
+          <i class=" fs-4 mx-2 fa-regular fa-heart" data-bs-toggle="tooltip" title="Favorites"></i>
+  
+        </section>
+        <style>
+          i:hover {
+            color: var(--main-blue);
+          }
+  
+          .tooltip-inner {
+            background-color: var(--main-blue);
+          }
+        </style>
+      </article>
+  
+    </nav>
+  </header>
 
 <!-- MAIN -->
 <main>
   <div class="container mt-5">
-    <h2>Contact Us</h2>
+    <h2 class="h2">Contact Us</h2>
     <form id="contactForm">
       <fieldset>
         <legend>Your Information</legend>
@@ -228,8 +229,9 @@
       </fieldset>
       <br>
   
-      <button type="submit" class="btn btn-primary w-100" style="height:50px">Submit</button>
+      <button type="submit" class="btn  w-100" style="height:50px ; background-color: rgb(108, 117, 125); color: white;">Submit</button>
 
+      <br><br>
       
     </form>
   </div>
@@ -242,7 +244,7 @@
 <br>
 
 <!-- FOOTER -->
-<footer>
+<!-- <footer>
   <br><br>
   <section class="d-flex justify-content-around flex-wrap">
     <div>
@@ -285,6 +287,83 @@
     <span>2024 @ Copyright California Global TS Company</span>
   </section>
   <br>
+</footer> -->
+
+<footer>
+  <div>
+    <div class="bg-gray-600 p-3 space-y-10 md:grid grid-cols-2 md:-mt-6 lg:grid-cols-4">
+      <div class="w-1/2 md:ml-24 md:mt-9 md:w-3/4">
+        <h1 class="text-orange-400 text-xl font-medium">Company</h1> <br />
+        <p class="text-gray-300/80 text-base hover:text-yellow-300 cursor-none"> A123 Lost Street <br /> New York </p>
+        <br />
+        <p class="text-gray-200/80 text-base hover:text-yellow-300 cursor-pointer"> <strong
+            class="tracking-wide text-orange-400 font-normal">Phone:</strong> +91 7008090111 </p>
+        <p class="text-gray-200/80 text-base hover:text-yellow-300 cursor-pointer"> <strong
+            class="tracking-wide text-orange-400 font-normal">Email:</strong> california.ts.company@gmail.com </p>
+      </div>
+      <div class="leading-9 md:w-2/4 md:order-3 md:ml-24">
+        <h1 class="text-orange-400 text-xl font-medium tracking-[0.030rem]"> Help</h1>
+        <ul class="mt-2 text-gray-300/80">
+          <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+              Help Center</a> </li>
+          <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+              About Us</a> </li>
+          <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+              Privacy Policy</a> </li>
+          <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+              Terms of service</a> </li>
+          <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+              Returns</a> </li>
+        </ul>
+      </div>
+      <div class="leading-9 md:w-3/4 md:order-4">
+        <h1 class="text-orange-400 text-xl font-medium tracking-[0.030rem]"> Wardrobe</h1>
+        <ul class="mt-2 text-gray-300/80">
+          <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+              Menswear</a> </li>
+          <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300"> How to
+              Measure</a> </li>
+          <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+              Men's Shirt Fit Guide</a> </li>
+          <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+              Women</a> </li>
+          <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+              Kids</a> </li>
+        </ul>
+      </div>
+      <div class="md:order-2 lg:order-last">
+        <h1 class="text-orange-400 text-xl font-medium tracking-[0.030rem]"> My Account</h1> <br />
+
+        <p class="text-gray-300/80 w-3/5 leading-7 mb-5 md:w-3/4"> Join 25,000+ others and never miss out on new
+          tips,tutorials, and more. </p> <input type="email" placeholder="Enter E-mail Here"
+          class="py-1 px-2 placeholder-gray-400 rounded-tl-xl focus: outline-none focus:border border-orange-600 md:w-1/2 lg:w-3/5" />
+        <button class="text-white bg-orange-400 p-1 -translate-x-1 rounded-br-xl hover:bg-orange-500"> Subscribe
+        </button>
+      </div>
+    </div>
+    <div class="bg-gray-900 p-3 flex flex-col text-center pt-5 space-y-8 md:flex-row md:justify-between md:space-y-0">
+      <div
+        class="flex mx-3 justify-between space-x-20 md:flex-row text-gray-200 md:space-x-28 md:ml-20 lg:ml-24 lg:space-x-[13rem] xl:space-x-72 xl:ml-24">
+        <p>2024 @ Copyright <strong>California Global TS Company </strong>All Rights Reserved</p>
+      </div>
+      <div
+        class="text-white pb-4 text-center text-xl space-x-2 md:w-2/4 md:pb-0 md:pl-2 md:space-x-1 lg:pl-[171px] lg:space-x-2 xl:pl-44">
+        <a href="#"
+          class="w-8 h-8 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"><i
+            class="fa fa-twitter"></i></a> <a href="#"
+          class="w-8 h-8 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"><i
+            class="fa fa-instagram"></i></a> <a href="#"
+          class="w-8 h-8 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"><i
+            class="fa fa-facebook"></i></a> <a href="#"
+          class="w-8 h-8 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"><i
+            class="fa fa-google"></i></a> <a href="#"
+          class="w-8 h-8 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"><i
+            class="fa fa-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+  <script src="https://use.fontawesome.com/03f8a0ebd4.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
 </footer>
 
 

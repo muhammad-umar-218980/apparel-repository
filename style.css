@@ -1,5 +1,5 @@
 :root{
- --main-blue: rgb(0, 106, 255);
+ --main-blue: rgb(108, 117, 125);
 }
 
 .art2{
@@ -11,7 +11,7 @@
  height: 500px;
 }
 
-main article:nth-child(3) section{
+.art3 section{
  width: 300px !important;
  text-align: center;
 }
@@ -36,6 +36,10 @@ main article:nth-child(3) section{
   justify-content: space-evenly !important;
   margin: 4px 20px !important;
   gap: 70px !important;
+}
+
+.list_div:hover{
+  text-decoration: none !important;
 }
 
 
@@ -105,14 +109,14 @@ i{
   display: none;
  }
 
-  main article:nth-child(3) section {
+  .art3 section {
    height: 50px !important;
   }
 
 }
 
 @media (max-width:910px) {
- main article:nth-child(3){
+ .art3{
   flex-wrap: wrap !important;
   flex-direction: column;
   align-items: center;
@@ -120,7 +124,7 @@ i{
   row-gap: 10px !important;
  }
 
- main article:nth-child(3) section{
+ .art3 section{
   width: 95% !important;
  }
 
